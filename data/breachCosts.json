@@ -1,0 +1,112 @@
+{
+  "industries": [
+    {
+      "industry": "healthcare",
+      "costPerRecord": 408,
+      "averageTotalCost": 9770000,
+      "source": "ibm_2024",
+      "year": 2024,
+      "dataPoints": {
+        "detectTime": 236,
+        "containTime": 89,
+        "recordsCompromised": 50000
+      }
+    },
+    {
+      "industry": "financial",
+      "costPerRecord": 321,
+      "averageTotalCost": 6080000,
+      "source": "ibm_2024",
+      "year": 2024,
+      "dataPoints": {
+        "detectTime": 233,
+        "containTime": 79,
+        "recordsCompromised": 35000
+      }
+    },
+    {
+      "industry": "retail",
+      "costPerRecord": 171,
+      "averageTotalCost": 3480000,
+      "source": "ibm_2024",
+      "year": 2024,
+      "dataPoints": {
+        "detectTime": 212,
+        "containTime": 76,
+        "recordsCompromised": 45000
+      }
+    },
+    {
+      "industry": "manufacturing",
+      "costPerRecord": 165,
+      "averageTotalCost": 4730000,
+      "source": "ibm_2024",
+      "year": 2024,
+      "dataPoints": {
+        "detectTime": 228,
+        "containTime": 82,
+        "recordsCompromised": 38000
+      }
+    },
+    {
+      "industry": "professional_services",
+      "costPerRecord": 184,
+      "averageTotalCost": 4250000,
+      "source": "ibm_2024",
+      "year": 2024,
+      "dataPoints": {
+        "detectTime": 218,
+        "containTime": 78,
+        "recordsCompromised": 32000
+      }
+    },
+    {
+      "industry": "education",
+      "costPerRecord": 162,
+      "averageTotalCost": 3650000,
+      "source": "ibm_2024",
+      "year": 2024,
+      "dataPoints": {
+        "detectTime": 224,
+        "containTime": 81,
+        "recordsCompromised": 41000
+      }
+    },
+    {
+      "industry": "government",
+      "costPerRecord": 172,
+      "averageTotalCost": 2070000,
+      "source": "ibm_2024",
+      "year": 2024,
+      "dataPoints": {
+        "detectTime": 267,
+        "containTime": 93,
+        "recordsCompromised": 28000
+      }
+    },
+    {
+      "industry": "technology",
+      "costPerRecord": 198,
+      "averageTotalCost": 5170000,
+      "source": "ibm_2024",
+      "year": 2024,
+      "dataPoints": {
+        "detectTime": 207,
+        "containTime": 73,
+        "recordsCompromised": 36000
+      }
+    },
+    {
+      "industry": "other",
+      "costPerRecord": 180,
+      "averageTotalCost": 4350000,
+      "source": "ibm_2024",
+      "year": 2024,
+      "dataPoints": {
+        "detectTime": 220,
+        "containTime": 80,
+        "recordsCompromised": 35000
+      }
+    }
+  ]
+}

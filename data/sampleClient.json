@@ -1,0 +1,21 @@
+{
+  "companyName": "Acme Healthcare Solutions",
+  "industry": "healthcare",
+  "revenue": 5000000,
+  "employeeCount": 50,
+  "criticalSystems": [
+    "Electronic Health Records (EHR)",
+    "Billing and Payment System",
+    "Patient Portal",
+    "Medical Imaging System"
+  ],
+  "complianceRequirements": [
+    "HIPAA",
+    "HITECH"
+  ],
+  "contactInfo": {
+    "primaryContact": "Dr. Sarah Johnson",
+    "email": "sjohnson@acmehealthcare.com",
+    "phone": "555-0123"
+  }
+}

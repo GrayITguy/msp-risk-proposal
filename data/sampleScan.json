@@ -1,0 +1,84 @@
+{
+  "scanId": "sample-scan-001",
+  "scanDate": "2026-01-15",
+  "source": "nessus",
+  "vulnerabilities": [
+    {
+      "id": "vuln-001",
+      "name": "Windows RDP Remote Code Execution",
+      "description": "Unpatched RDP service allows remote code execution without authentication",
+      "cvssScore": 9.8,
+      "severity": "critical",
+      "affectedAssets": ["server-01", "server-02", "workstation-05"],
+      "cve": "CVE-2023-1234",
+      "recommendation": "Apply security patch KB5012345 immediately and restrict RDP access to VPN only"
+    },
+    {
+      "id": "vuln-002",
+      "name": "Weak SSL/TLS Configuration",
+      "description": "Server accepts outdated encryption protocols TLS 1.0 and 1.1, vulnerable to downgrade attacks",
+      "cvssScore": 5.3,
+      "severity": "medium",
+      "affectedAssets": ["web-server-01"],
+      "cve": "CVE-2022-5678",
+      "recommendation": "Update TLS configuration to 1.2 minimum, disable legacy protocols"
+    },
+    {
+      "id": "vuln-003",
+      "name": "SQL Server Authentication Bypass",
+      "description": "SQL Server running with default credentials, allowing unauthorized database access",
+      "cvssScore": 9.1,
+      "severity": "critical",
+      "affectedAssets": ["db-server-01"],
+      "cve": "CVE-2023-8901",
+      "recommendation": "Change default credentials immediately, implement strong password policy, enable SQL authentication logging"
+    },
+    {
+      "id": "vuln-004",
+      "name": "Outdated Web Application Framework",
+      "description": "Web application running PHP 7.2 which has reached end of life with multiple known vulnerabilities",
+      "cvssScore": 7.5,
+      "severity": "high",
+      "affectedAssets": ["web-server-01", "web-server-02"],
+      "recommendation": "Upgrade to PHP 8.1 or later, test application compatibility before deployment"
+    },
+    {
+      "id": "vuln-005",
+      "name": "Missing Security Headers",
+      "description": "Web server missing critical security headers including X-Frame-Options and Content-Security-Policy",
+      "cvssScore": 4.3,
+      "severity": "medium",
+      "affectedAssets": ["web-server-01", "web-server-02"],
+      "recommendation": "Configure web server to include security headers, implement CSP policy"
+    },
+    {
+      "id": "vuln-006",
+      "name": "Unencrypted Network Traffic",
+      "description": "Internal file share accessed over SMB v1 protocol without encryption",
+      "cvssScore": 8.1,
+      "severity": "high",
+      "affectedAssets": ["file-server-01"],
+      "cve": "CVE-2017-0143",
+      "recommendation": "Disable SMB v1, upgrade to SMB v3 with encryption enabled"
+    },
+    {
+      "id": "vuln-007",
+      "name": "Weak Password Policy",
+      "description": "Active Directory configured with minimum 6-character passwords, no complexity requirements",
+      "cvssScore": 6.5,
+      "severity": "medium",
+      "affectedAssets": ["domain-controller-01"],
+      "recommendation": "Implement 12-character minimum, require complexity, enable account lockout after 5 failed attempts"
+    },
+    {
+      "id": "vuln-008",
+      "name": "Unpatched Firewall Firmware",
+      "description": "Network firewall running firmware version with known remote code execution vulnerability",
+      "cvssScore": 9.8,
+      "severity": "critical",
+      "affectedAssets": ["firewall-01"],
+      "cve": "CVE-2024-1234",
+      "recommendation": "Update firewall firmware to latest version immediately, schedule regular firmware updates"
+    }
+  ]
+}
