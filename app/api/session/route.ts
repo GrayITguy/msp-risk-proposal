@@ -1,5 +1,6 @@
 import { NextResponse } from 'next/server';
 import { checkRateLimit, getClientIP, RATE_LIMITS } from '@/lib/middleware/rateLimit';
+import crypto from 'crypto';
 
 // In-memory session storage (for production, use Redis or database)
 // Using Map to store session data with automatic cleanup
@@ -20,10 +21,14 @@ setInterval(() => {
 
 // Generate a secure random session ID
 function generateSessionId(): string {
-  const timestamp = Date.now();
-  const random = Math.random().toString(36).substring(2, 15);
-  const random2 = Math.random().toString(36).substring(2, 15);
-  return `sess_${timestamp}_${random}${random2}`;
+  if (typeof crypto.randomUUID === 'function') {
+    // Use built-in UUID generation when available
+    return `sess_${crypto.randomUUID()}`;
+  }
+
+  // Fallback for environments without crypto.randomUUID
+  const randomBytes = crypto.randomBytes(32).toString('hex');
+  return `sess_${randomBytes}`;
 }
 
 // Store data in session
